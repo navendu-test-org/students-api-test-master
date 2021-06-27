@@ -1,0 +1,79 @@
+definitions:
+  GenericError:
+    description: GenericError is a generic error message returned by a server
+    properties:
+      message:
+        type: string
+        x-go-name: Message
+    type: object
+    x-go-package: github.com/navendu-pottekkat/students-api-test/handlers
+  Student:
+    properties:
+      age:
+        format: int64
+        type: integer
+        x-go-name: Age
+      course:
+        type: string
+        x-go-name: Course
+      id:
+        type: string
+        x-go-name: ID
+      name:
+        type: string
+        x-go-name: Name
+    type: object
+    x-go-package: github.com/navendu-pottekkat/students-api-test/data
+  ValidationError:
+    description: ValidationError is a collection of validation error messages
+    properties:
+      messages:
+        items:
+          type: string
+        type: array
+        x-go-name: Messages
+    type: object
+    x-go-package: github.com/navendu-pottekkat/students-api-test/handlers
+info: {}
+paths:
+  /:
+    get:
+      description: Return a list of students from the database
+      operationId: listStudents
+      responses:
+        "200":
+          $ref: '#/responses/studentsResponse'
+      tags:
+      - students
+    post:
+      description: Create a new product
+      operationId: createStudent
+      responses:
+        "200":
+          $ref: '#/responses/studentResponse'
+        "422":
+          $ref: '#/responses/errorValidation'
+        "501":
+          $ref: '#/responses/errorResponse'
+      tags:
+      - students
+responses:
+  errorResponse:
+    description: Generic error message returned as a string
+    schema:
+      $ref: '#/definitions/GenericError'
+  errorValidation:
+    description: Validation errors defined as an array of strings
+    schema:
+      $ref: '#/definitions/ValidationError'
+  studentResponse:
+    description: Data structure representing a single student
+    schema:
+      $ref: '#/definitions/Student'
+  studentsResponse:
+    description: A list of students
+    schema:
+      items:
+        $ref: '#/definitions/Student'
+      type: array
+swagger: "2.0"

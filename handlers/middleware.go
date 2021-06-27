@@ -5,7 +5,7 @@ import (
 	"fmt"
 	"net/http"
 
-	"github.com/navendu-pottekkat/students-api-test/data"
+	"github.com/navendu-pottekkat/students-api-test-master/data"
 )
 
 func (s Students) MiddlewareValidateStudent(next http.Handler) http.Handler {

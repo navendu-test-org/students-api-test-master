@@ -16,7 +16,7 @@
 
 package handlers
 
-import "github.com/navendu-pottekkat/students-api-test/data"
+import "github.com/navendu-pottekkat/students-api-test-master/data"
 
 // Generic error message returned as a string
 // swagger:response errorResponse

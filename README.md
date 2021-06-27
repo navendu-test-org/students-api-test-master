@@ -1,4 +1,4 @@
-# students-api-test
+# students-api-test-master
 
 An API server written in Go using the [Gorilla web toolkit](https://github.com/gorilla/mux) having docs generated using [go-swagger](https://github.com/go-swagger/go-swagger).
 
@@ -7,7 +7,7 @@ An API server written in Go using the [Gorilla web toolkit](https://github.com/g
 Clone the repo-
 
 ```
-gh repo clone navendu-pottekkat/students-api-test
+gh repo clone navendu-pottekkat/students-api-test-master
 ```
 
 Run make-

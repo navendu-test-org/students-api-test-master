@@ -6,7 +6,7 @@ definitions:
         type: string
         x-go-name: Message
     type: object
-    x-go-package: github.com/navendu-pottekkat/students-api-test/handlers
+    x-go-package: github.com/navendu-pottekkat/students-api-test-master/handlers
   Student:
     properties:
       age:
@@ -23,7 +23,7 @@ definitions:
         type: string
         x-go-name: Name
     type: object
-    x-go-package: github.com/navendu-pottekkat/students-api-test/data
+    x-go-package: github.com/navendu-pottekkat/students-api-test-master/data
   ValidationError:
     description: ValidationError is a collection of validation error messages
     properties:
@@ -33,7 +33,7 @@ definitions:
         type: array
         x-go-name: Messages
     type: object
-    x-go-package: github.com/navendu-pottekkat/students-api-test/handlers
+    x-go-package: github.com/navendu-pottekkat/students-api-test-master/handlers
 info: {}
 paths:
   /:

@@ -11,13 +11,13 @@ import (
 
 	"github.com/go-openapi/runtime/middleware"
 	"github.com/gorilla/mux"
-	"github.com/navendu-pottekkat/students-api-test/handlers"
+	"github.com/navendu-pottekkat/students-api-test-master/handlers"
 )
 
 var port = ":9090"
 
 func main() {
-	l := log.New(os.Stdout, "students-api-test ", log.LstdFlags)
+	l := log.New(os.Stdout, "students-api-test-master ", log.LstdFlags)
 	sh := handlers.NewStudents(l)
 
 	sm := mux.NewRouter()

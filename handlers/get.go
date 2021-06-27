@@ -3,7 +3,7 @@ package handlers
 import (
 	"net/http"
 
-	"github.com/navendu-pottekkat/students-api-test/data"
+	"github.com/navendu-pottekkat/students-api-test-master/data"
 )
 
 // swagger:route GET / students listStudents

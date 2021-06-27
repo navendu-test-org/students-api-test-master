@@ -27,7 +27,7 @@ MANDATORY_PATH = /usr/share/gconf/plasma.mandatory.path
 # environment
 KONSOLE_DBUS_SERVICE = :1.195
 # environment
-VSCODE_CWD = /home/navendu/Code/students-api-test-test-master
+VSCODE_CWD = /home/navendu/Code/students-api-test-master-test-master
 # environment
 WINDOWID = 94371847
 # default
@@ -49,7 +49,7 @@ VSCODE_HANDLES_UNCAUGHT_ERRORS = true
 # default
 .VARIABLES := 
 # environment
-PWD = /home/navendu/Code/students-api-test-test-master
+PWD = /home/navendu/Code/students-api-test-master-test-master
 # automatic
 %D = $(patsubst %/,%,$(dir $%))
 # environment
@@ -81,7 +81,7 @@ COLORFGBG = 15;0
 # makefile
 MAKEFLAGS = pqrR
 # makefile
-CURDIR := /home/navendu/Code/students-api-test-test-master
+CURDIR := /home/navendu/Code/students-api-test-master-test-master
 # environment
 VSCODE_PIPE_LOGGING = true
 # environment

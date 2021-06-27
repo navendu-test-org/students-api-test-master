@@ -1,4 +1,4 @@
-module github.com/navendu-pottekkat/students-api-test-master-test
+module github.com/navendu-pottekkat/students-api-test-master
 
 go 1.16
 
